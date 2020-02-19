@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        tatepass.com
+        tatepass.com 2020/02/19
       </h1>
       <h2 class="subtitle">
         Corporate Site
