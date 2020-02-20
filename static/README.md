@@ -1,4 +1,10 @@
 # STATIC
+静的ファイル置き場です。  
+ページやコンポーネントからここのファイルを参照したい場合、static直下をルートにして指定すればいいです。  
+例：  
+```
+<img src="/favicon.ico">
+```
 
 **This directory is not required, you can delete it if you don't want to use it.**
 

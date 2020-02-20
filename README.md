@@ -1,5 +1,5 @@
 # tatepass.com
-Corporate site
+コーポレートサイト
 
 ## 開発環境
 
@@ -26,7 +26,8 @@ $ npm run generate
 /dist配下のファイルをアップロードする  
 
 ## コントリビューション
-> いわゆる Fork And Pull ワークフローで行います。
+### いわゆる Fork And Pull ワークフローで行います。
+----
 
 1. tatepass/tatepass.com (以下upstream) をフォーク
 1. フォークしたリポジトリ(以下origin) をローカルにクローン
