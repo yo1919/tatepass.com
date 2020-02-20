@@ -1,7 +1,7 @@
 # tatepass.com
 Corporate site
 
-## 開発
+## 開発環境
 
 ``` bash
 # パッケージをインストール
@@ -23,6 +23,16 @@ $ npm run start
 # レンタルサーバーにデプロイするファイルを生成
 $ npm run generate
 ```
-/dist以下のファイルをアップロードする  
+/dist配下のファイルをアップロードする  
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org). 
+## コントリビューション
+> いわゆる Fork And Pull ワークフローで行います。
+
+1. tatepass/tatepass.com (以下upstream) をフォーク
+1. フォークしたリポジトリ(以下origin) をローカルにクローン
+1. originとローカルで作業
+  - ~ブランチをきちんと切ること~ （いまはしなくてOK）
+  - 作業中、こまめに最新のupstreamを取り込むこと
+1. 作業が終わったらコミットしてoriginにプッシュ
+1. originが最新のupstreamを取り込んでいることを確認
+1. upstreamに対してプルリクエストを発行する
