@@ -26,7 +26,7 @@ $ npm run generate
 /dist配下のファイルをアップロードする  
 
 ## コントリビューション
-### いわゆる Fork And Pull ワークフローで行います。
+**いわゆる Fork And Pull ワークフローで行います。**
 ----
 
 1. tatepass/tatepass.com (以下upstream) をフォーク
@@ -37,3 +37,43 @@ $ npm run generate
 1. 作業が終わったらコミットしてoriginにプッシュ
 1. originが最新のupstreamを取り込んでいることを確認
 1. upstreamに対してプルリクエストを発行する
+
+作業の準備：
+``` bash
+# フォークしたリポジトリ(以下origin) をローカルにクローンする
+$ git clone https://..../your_name/tatepass.com.git
+
+# リポジトリにupstreamを追加する
+$ git remote add upstream https://github.com/tatepass/tatepass.com.git
+```
+
+作業開始の準備：
+``` bash
+# 最新をとりこみ
+$ git pull origin master
+$ git pull upstream master
+$ git push origin master
+
+# 作業用のブランチを作成、そこの作業に切り替え
+$ git checkout -b ブランチ名 
+```
+
+作業が終わったら：
+``` bash
+# 現状をコミット
+$ git add .
+$ git commit -m "なんかコメント"
+$ git push origin ブランチ名
+
+# masterブランチに最新をとりこむ
+$ git checkout master
+$ git pull origin master
+$ git pull upstream master
+$ git push origin mastetr
+
+# 作業ブランチに変更を取り込む
+$ git checkout ブランチ名
+$ git merge master
+$ git push origin ブランチ名
+```
+=> Githubでプルリクエストを発行する
