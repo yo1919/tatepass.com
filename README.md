@@ -32,7 +32,7 @@ $ npm run generate
 1. tatepass/tatepass.com (以下upstream) をフォーク
 1. フォークしたリポジトリ(以下origin) をローカルにクローン
 1. originとローカルで作業
-  - ~ブランチをきちんと切ること~ （いまはしなくてOK）
+  - ブランチをきちんと切ること
   - 作業中、こまめに最新のupstreamを取り込むこと
 1. 作業が終わったらコミットしてoriginにプッシュ
 1. originが最新のupstreamを取り込んでいることを確認
