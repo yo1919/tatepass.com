@@ -43,7 +43,7 @@ $ npm run generate
 # フォークしたリポジトリ(以下origin) をローカルにクローンする
 $ git clone https://..../your_name/tatepass.com.git
 
-# リポジトリにupstreamを追加する
+# リモートにupstreamを追加する
 $ git remote add upstream https://github.com/tatepass/tatepass.com.git
 ```
 
@@ -65,15 +65,23 @@ $ git add .
 $ git commit -m "なんかコメント"
 $ git push origin ブランチ名
 
-# masterブランチに最新をとりこむ
+# originのmasterブランチに最新をとりこむ
 $ git checkout master
 $ git pull origin master
 $ git pull upstream master
-$ git push origin mastetr
+$ git push origin master
 
 # 作業ブランチに変更を取り込む
 $ git checkout ブランチ名
 $ git merge master
 $ git push origin ブランチ名
 ```
-=> Githubでプルリクエストを発行する
+=> Githubでプルリクエストを発行する  
+  
+プルリクエストがマージされたら：
+``` bash
+# 作業ブランチはもういらないので削除
+$ git checkout master
+$ git branch -D ブランチ名
+```
+=> Github上のも削除していい
