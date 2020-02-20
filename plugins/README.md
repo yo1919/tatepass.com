@@ -1,4 +1,5 @@
 # PLUGINS
+自作プラグインや、外部のvueコンポーネントを使ったりするときにここを使います  
 
 **This directory is not required, you can delete it if you don't want to use it.**
 
