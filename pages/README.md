@@ -15,3 +15,22 @@ pages直下のindex.vueが*tatepass.com*になり、その配下に
 <script src="./index.js"></script>
 <style src="./index.styl" lang="stylus"></style>
 ```
+*.vueファイルを読み込んでページで表示する方法  
+（compoents/Logo.vueを読み込む場合）
+``` html
+<template>
+  <!-- 作ったcomponentsをタグで埋め込む -->
+  <Logo />
+</template>
+<scripts>
+  // スクリプトの先頭でvueファイルをimportする
+  // import { クラス名 } 'パス'; の形式
+  import { Logo } from '~/components/Logo.vue';
+  export default {
+  　// importしたLogoを登録してタグとしてこのページで使えるようにする
+    components: [
+      Logo
+    ]
+  }
+</scripts>
+```
