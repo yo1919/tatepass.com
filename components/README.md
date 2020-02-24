@@ -1,7 +1,3 @@
 # COMPONENTS
-
-**This directory is not required, you can delete it if you don't want to use it.**
-
-The components directory contains your Vue.js Components.
-
-_Nuxt.js doesn't supercharge these components._
+コンポーネント、要するに共通パーツや独立して動くパーツを作る場合はここで作成します。  
+コンポーネントはNuxtのasyncDataなどのライフサイクルフックが動きません。  
