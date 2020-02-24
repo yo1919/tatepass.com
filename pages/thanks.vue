@@ -8,14 +8,12 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import header_edit from '~/components/header.vue'
 import footer_edit from '~/components/footer.vue'
 export default {
   components: {
-    Logo,
-    header_edit,
-    footer_edit
+    header_edit
+    , footer_edit
   }
 }
 </script>
