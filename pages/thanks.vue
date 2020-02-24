@@ -2,7 +2,7 @@
   <div>
     <header_edit />
     <h1 style="text-align:center; margin:100px auto;">送信が完了しました。</h1>
-    <a href="https://tatepass.com" style="display:block; text-align:center;">トップページへ戻る</a>
+    <nuxt-link to="/" style="display:block; text-align:center;">トップページへ戻る</nuxt-link>
     <footer_edit />
   </div>
 </template>
