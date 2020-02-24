@@ -6,7 +6,7 @@ pages直下のindex.vueが*tatepass.com*になり、その配下に
 応用すると……  
 ```フォルダA/フォルダB/ファイル名C.vue```とファイルを作ると、URLは*tatepass.com/フォルダA/フォルダB/ファイル名* になります。
 
----- 
+----
 
 # TIPS
 *.vueファイルの中身を下記のようにすることで、html, js, css, 各種ファイルを分けることができます。  
@@ -34,3 +34,6 @@ pages直下のindex.vueが*tatepass.com*になり、その配下に
   }
 </scripts>
 ```
+
+
+テストです。
