@@ -18,13 +18,13 @@ $ npm run start
 ```
 
 ## デプロイ
-
-``` bash
-# レンタルサーバーにデプロイするファイルを生成
-$ npm run generate
-```
-/dist配下のファイルをアップロードする  
-> プルリクに併せて勝手にdistを作ってアップしてくれる環境を作成中
+1. プルリクエストがマージされると Github Actions で自動的にファイルが生成される  
+1. tatepass/tatepass.com の Actions タブをクリック
+1. Workfrows の Release をクリック
+1. 最新の Release をクリックして詳細へ
+1. Artifacts の tatepass_dot_com をダウンロード
+1. 解凍したファイル一式をサーバーにアップする
+  - サーバーのファイルは一旦綺麗にしとく
 
 ## コントリビューション
 **いわゆる Fork And Pull ワークフローで行います。**
