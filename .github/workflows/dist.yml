@@ -1,4 +1,4 @@
-name: Dist
+name: Release
 on:
   pull_request:
     types:
@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -27,5 +27,5 @@ jobs:
     - uses: actions/upload-artifact@v1
       if: success()
       with:
-       name: dist
+       name: distribution
        path: dist
