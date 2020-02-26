@@ -8,15 +8,12 @@
         <div class="main__eyecatch-image"></div>
         <section class="main__eyecatch-conts">
           <p class="main__eyecatch-conts-topp">
-            DNA検査 ✕ ITで
+            DNA検査 ✕ ITソリューションを軸に
           </p>
           <h1><span>「人を勝たせる仕事をする」</span></h1>
           <p class="main__eyecatch-conts-underp">
-            テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・<br>
-            テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・<br>
-            テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・<br>
-            テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・<br>
-            テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・
+            私たちは企業や個人が抱える様々な悩みや課題に向き合い、DNA検査とITソリューションを軸にそれらの解決をサポート致します。
+            刻一刻と変化する現代社会の中で「変化を恐れず」お客様に最高の「タテパス」を通すことが私たちの使命です。
           </p>
         <!--
           <a class="main__eyecatch-conts-underlink">
@@ -39,7 +36,10 @@
                 <img src="/service_dna.jpg" alt="DNA検査">
               </a>
               <h2>DNA検査</h2>
-              <p>テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・</p>
+              <p>
+                当社が開発した、店舗向けのDNA検査「DNAXY（ドナクシー）」を、導入から検査結果の活用までトータルでサポート致します。<br>
+                また、オリジナルブランドのDNA検査OEM開発が可能です。あらゆるジャンルのDNA検査が開発出来ますので、DNA検査を使ったビジネスをお考えの場合はまずはお気軽にご相談ください。
+              </p>
             <!--
               <a class="main__container__service-wrapper__inner-textlink" href="#">
                 <span>詳しくはこちらから</span>
@@ -51,7 +51,10 @@
                 <img src="/service_web.jpg" alt="WEBサイト制作">
               </a>
               <h2>WEBサイト制作</h2>
-              <p>テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・</p>
+              <p>
+                BtoBやBtoCなどあらゆるWEBサイトの制作を承っております。<br>
+                フロントエンドのデザインから動的なWEBサイトにするためのバックエンドの開発まで、お客様が作りたいWEBサイトを実現するために最適なご提案をさせていただきます。
+              </p>
             <!--
               <a class="main__container__service-wrapper__inner-textlink" href="#">
                 <span>詳しくはこちらから</span>
@@ -63,7 +66,11 @@
                 <img src="/service_app.jpg" alt="アプリ開発／WEBシステム開発">
               </a>
               <h2>アプリ開発／WEBシステム開発</h2>
-              <p>テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・テキスト・</p>
+              <p>
+                スマホアプリの開発（iPhone/Android）やブラウザベースのWEBシステム開発など幅広くご対応が可能です。<br>
+                店舗向けのDNA検査「DNAXY（ドナクシー）」を活用するWEBシステムも自社で開発しております。<br>
+                オリジナルのWEBシステムの開発をご検討の際はお気軽にご相談ください。
+              </p>
             <!--
               <a class="main__container__service-wrapper__inner-textlink" href="#">
                 <span>詳しくはこちらから</span>
@@ -234,7 +241,7 @@ export default {
     }
     .main__container__service-wrapper{
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
       flex-wrap: wrap;
     }
@@ -505,8 +512,8 @@ form{
 
   .main__eyecatch-conts{
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 35px;
+    left: 30px;
     margin: 0;
     text-align: left;
     background: none;
@@ -521,6 +528,10 @@ form{
       display: block;
       line-height: 2.2;
       margin: 0 0 1.5em;
+      padding: 0 2.5em 2.5em;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      width: 40%;
     }
     .main__eyecatch-conts-underlink{
       margin: 3em auto 0;
