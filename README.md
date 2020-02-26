@@ -24,6 +24,7 @@ $ npm run start
 $ npm run generate
 ```
 /dist配下のファイルをアップロードする  
+> プルリクに併せて勝手にdistを作ってアップしてくれる環境を作成中
 
 ## コントリビューション
 **いわゆる Fork And Pull ワークフローで行います。**
