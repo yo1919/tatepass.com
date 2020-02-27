@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'DNA検査とITで「人を勝たせる仕事をする」｜ 株式会社tatepass',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '私たちは企業や個人が抱える様々な悩みや課題に向き合い、DNA検査とITソリューションを軸にそれらの解決をサポート致します。 刻一刻と変化する現代社会の中で「変化を恐れず」お客様に最高の「タテパス」を通すことが私たちの使命です。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -41,6 +41,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/sitemap'
   ],
   /*
   ** Build configuration
