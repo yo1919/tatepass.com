@@ -43,6 +43,10 @@ export default {
   modules: [
     '@nuxtjs/sitemap'
   ],
+  sitemap : {
+    hostname: 'https://tatepass.com'
+    , gzip: true
+  },
   /*
   ** Build configuration
   */
