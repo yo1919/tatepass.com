@@ -1,12 +1,13 @@
 <template>
-  <footer id="footer">
+  <footer class="footer__footer">
     <p>&copy; Copyright 2020 tatepass Inc. All rights reserved.</p>
   </footer>
 </template>
 
 <!--footercssここから-->
 <style>
-footer{
+.footer__footer{
+  margin-top: auto;
   text-align: center;
   padding: 1em 0;
   background: #333;
