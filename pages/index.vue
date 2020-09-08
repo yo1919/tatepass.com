@@ -40,11 +40,9 @@
                 当社が開発した、店舗向けのDNA検査「DNAXY（ナクシー）」を、導入から検査結果の活用までトータルでサポート致します。<br>
                 また、オリジナルブランドのDNA検査OEM開発が可能です。あらゆるジャンルのDNA検査が開発出来ますので、DNA検査を使ったビジネスをお考えの場合はまずはお気軽にご相談ください。
               </p>
-            <!--
               <a class="main__container__service-wrapper__inner-textlink" href="#">
                 <span>詳しくはこちらから</span>
               </a>
-            -->
             </section>
             <section class="main__container__service-wrapper__inner">
               <a class="main__container__service-wrapper__inner-imglink" href="">
