@@ -1,10 +1,12 @@
 <template>
   <div class="container">
     <header_edit />
+
     <!--メインコンテンツここから-->
     <main class="main main-toppage">
+
+      <!--アイキャッチ-->
       <div class="main__eyecatch">
-        <!--アイキャッチ画像-->
         <div class="main__eyecatch-image"></div>
         <section class="main__eyecatch-conts">
           <p class="main__eyecatch-conts-topp">
@@ -24,63 +26,139 @@
         -->
         </section>
       </div>
+
       <!--メインコンテンツ-->
       <article class="main__container">
+
         <!--事業内容ここから-->
         <section class="main__container__wrapper main__container__service">
           <h2 class="main__container__service-title">Service</h2>
           <p class="main__container__service-subtitle">事業内容</p>
           <div class="main__container__service-wrapper">
+
+            <!--DNA検査-->
             <section class="main__container__service-wrapper__inner">
-              <a class="main__container__service-wrapper__inner-imglink" href="">
-                <img src="/service_dna.jpg" alt="DNA検査">
-              </a>
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/dna">
+                  <img src="/service_dna.jpg" alt="DNA検査">
+                </a>
+              </div>
               <h2>DNA検査</h2>
               <p>
-                当社が開発した、店舗向けのDNA検査「DNAXY（ナクシー）」を、導入から検査結果の活用までトータルでサポート致します。<br>
+                当社が開発した、店舗向けのダイエットDNA検査「dNAXY（ナクシー）」を、導入から検査結果の活用までトータルでサポート致します。<br>
                 また、オリジナルブランドのDNA検査OEM開発が可能です。あらゆるジャンルのDNA検査が開発出来ますので、DNA検査を使ったビジネスをお考えの場合はまずはお気軽にご相談ください。
               </p>
-              <a class="main__container__service-wrapper__inner-textlink" href="#">
-                <span>詳しくはこちらから</span>
+              <a class="button" href="/service/dna">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
               </a>
             </section>
+
+            <!--WEBサイト制作-->
             <section class="main__container__service-wrapper__inner">
-              <a class="main__container__service-wrapper__inner-imglink" href="">
-                <img src="/service_web.jpg" alt="WEBサイト制作">
-              </a>
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/webdesign">
+                  <img src="/service_web.jpg" alt="WEBサイト制作">
+                </a>
+              </div>
               <h2>WEBサイト制作</h2>
               <p>
                 BtoBやBtoCなどあらゆるWEBサイトの制作を承っております。<br>
                 フロントエンドのデザインから動的なWEBサイトにするためのバックエンドの開発まで、お客様が作りたいWEBサイトを実現するために最適なご提案をさせていただきます。
               </p>
-            <!--
-              <a class="main__container__service-wrapper__inner-textlink" href="#">
-                <span>詳しくはこちらから</span>
+              <a class="button" href="/service/webdesign">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
               </a>
-            -->
             </section>
+
+            <!--アプリ開発／WEBシステム開発査-->
             <section class="main__container__service-wrapper__inner">
-              <a class="main__container__service-wrapper__inner-imglink" href="">
-                <img src="/service_app.jpg" alt="アプリ開発／WEBシステム開発">
-              </a>
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/app">
+                  <img src="/service_app.jpg" alt="アプリ開発／WEBシステム開発">
+                </a>
+              </div>
               <h2>アプリ開発／WEBシステム開発</h2>
               <p>
                 スマホアプリの開発（iPhone/Android）やブラウザベースのWEBシステム開発など幅広くご対応が可能です。<br>
-                店舗向けのDNA検査「DNAXY（ナクシー）」を活用するWEBシステムも自社で開発しております。<br>
+                店舗向けのDNA検査「dNAXY（ナクシー）」を活用するWEBシステムも自社で開発しております。<br>
                 オリジナルのWEBシステムの開発をご検討の際はお気軽にご相談ください。
               </p>
-            <!--
-              <a class="main__container__service-wrapper__inner-textlink" href="#">
-                <span>詳しくはこちらから</span>
+              <a class="button" href="/service/app">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
               </a>
-            -->
             </section>
+
+            <!--WEBメディア運営-->
+            <section class="main__container__service-wrapper__inner">
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/webmedia">
+                  <img src="/service_webmedia.jpg" alt="WEBメディア運営">
+                </a>
+              </div>
+              <h2>WEBメディア運営</h2>
+              <p>
+                Instagramのファッションアカウント「Jack Purcell Snap」を運営しております。<br>
+                また、同アカウントのWEB版ファッションスナップサイト「jackpurcell-snap.com」も運営しております。<br>
+
+              </p>
+              <a class="button" href="/service/webmedia">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
+            </section>
+
+            <!--アパレル-->
+            <section class="main__container__service-wrapper__inner">
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/apparel">
+                  <img src="/service_apparel.jpg" alt="アパレル">
+                </a>
+              </div>
+              <h2>アパレル</h2>
+              <p>
+                自社ブランドとして「Jack Purcell Snap」のアパレルを展開しております。<br>
+                また、パターンからデザイン、生地屋さんから縫製工場さんの手配まで服から小物までアパレル全般のOEMも対応が可能です。
+              </p>
+              <a class="button" href="/service/apparel">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
+            </section>
+
+            <!--IT戦略コンサルティング-->
+            <section class="main__container__service-wrapper__inner">
+              <div class="main__container__service-wrapper__inner__imgwrapper">
+                <a class="main__container__service-wrapper__inner-imglink" href="/service/itconsulting">
+                  <img src="/service_itconsulting.jpg" alt="IT戦略コンサルティング">
+                </a>
+              </div>
+              <h2>IT戦略コンサルティング</h2>
+              <p>
+                経営とITを結びつける専門家「ITストラテジスト」があなたのビジネスを成功へ導きます。<br>
+                社内にITの専門家がいない、業務効率化のためにITサービスを導入したいけど何をしていいか分からない、そんな時はまずはお気軽にご相談ください。最適なご提案をさせていただきます。
+              </p>
+              <a class="button" href="/service/itconsulting">
+                詳しくはこちらから
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
+            </section>
+
           </div>
         </section>
         <!--事業内容ここまで-->
+
         <!--会社概要ここから-->
         <section class="main__container__wrapper main__container__company">
-          <h2 class="main__container__service-title">Outline</h2>
+          <h2 class="main__container__service-title">Company</h2>
           <p class="main__container__service-subtitle">会社概要</p>
           <div class="main__container__service-wrapper main__container__service-wrapper__outline">
             <section class="main__container__service-wrapper__outline__inner">
@@ -106,9 +184,19 @@
               <h3>資本金</h3>
               <p>1,000,000円</p>
             </section>
+            <section class="main__container__service-wrapper__outline__inner">
+              <h3>主要取引銀行</h3>
+              <p>みずほ銀行 渋谷支店</p>
+            </section>
           </div>
+          <a class="button top_company_morebutton" href="/company">
+            会社概要 詳しく見る
+            <div class="button__horizontal"></div>
+            <div class="button__vertical"></div>
+          </a>
         </section>
         <!--会社概要ここまで-->
+
         <!--お問い合わせここから-->
         <section class="main__container__wrapper main__container__contact">
           <h2 class="main__container__service-title">Contact Us</h2>
@@ -125,11 +213,13 @@
           </div>
         </section>
         <!--お問い合わせここまで-->
-      </article>
-    </main>
+
+      </article><!-- .main__container -->
+    </main><!-- .main main-toppage -->
     <!--メインコンテンツここまで-->
+
     <footer_edit />
-  </div>
+  </div><!-- .container -->
 </template>
 
 <script>
@@ -152,11 +242,6 @@ export default {
 </script>
 
 <style>
-.main{
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
 
   /*アイキャッチ部分*/
   .main__eyecatch{
@@ -196,11 +281,11 @@ export default {
     }
       .main__eyecatch-conts .main__eyecatch-conts-topp{
         color: #000;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: bold;
       }
       .main__eyecatch-conts h1{
-        font-weight: 900;
+        font-weight: bold;
         font-size: 24px;
         margin: 0 0 .5em;
         color: #000;
@@ -217,21 +302,20 @@ export default {
         }
 
 /*メインコンテンツ*/
-.main__container{
-  width: 95%;
-  margin: 2em auto;
-}
+
+  .main__container__wrapper{
+    margin: 0 auto 2em;
+  }
 
   /*事業内容*/
   .main__container__service{
-    margin: 0;
-    width:100%;
-    max-width: 1280px;
+    width:90%;
+    max-width: 1440px;
   }
     .main__container__service-title{
       text-align: center;
       font-size: 36px;
-      font-weight: 900;
+      font-weight: bold;
     }
     .main__container__service-subtitle{
       text-align: center;
@@ -240,19 +324,55 @@ export default {
     .main__container__service-wrapper{
       display: flex;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
+      align-items: stretch;
     }
       .main__container__service-wrapper__inner{
         width: 100%;
-        margin: 2em auto;
+        margin: 2em 0 3.5em;
+        display: flex;
+        flex-direction: column;
+      }
+      .main__container__service-wrapper__inner__imgwrapper{
+        overflow: hidden;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
       }
         .main__container__service-wrapper__inner-imglink{
           display: block;
-          width: 95%;
+          width: 100%;
+          height: auto;
           margin: 0 auto;
           cursor: pointer;
+          position: relative;
+          transition-duration: 0.5s;
+          overflow: hidden;
         }
+          .main__container__service-wrapper__inner-imglink:hover{
+            transform: scale(1.3); /* 文字の拡大率 */
+            filter: blur(0); /* ブラー効果を解除 */
+          }
+          .main__container__service-wrapper__inner-imglink::before{
+            content: "詳しくこちら →";
+            font-size: 12px;
+            display: flex; /* 文字の中央配置 */
+            justify-content: center; /* 文字の中央配置 */
+            align-items: center; /* 文字の中央配置 */
+            color: #FFF;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(rgba(0, 0, 0, 0.4), #333333);
+            text-shadow: 0 0 2px #000;
+            transition-duration: 0.5s;
+            opacity: 0; /* 見えないように透過しておく */
+          }
+            .main__container__service-wrapper__inner-imglink:hover::before{
+              opacity: 1; /* マウスオーバーで可視化 */
+            }
+
           .main__container__service-wrapper__inner-imglink img{
             width: 100%;
             height: auto;
@@ -261,21 +381,30 @@ export default {
         .main__container__service-wrapper__inner h2{
           width: 95%;
           margin: 1em auto .5em;
-          font-size: 15px;
-          font-weight: 900;
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 0 .5em;
         }
+          .main__container__service-wrapper__inner h2::after{
+            content: "";
+            width: 15%;
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: .5em 0 0;
+          }
         .main__container__service-wrapper__inner p{
           width: 95%;
-          margin: 0 auto;
+          margin: 0 auto 3em;
           font-size: 13px;
           color: #666;
         }
         .main__container__service-wrapper__inner-textlink{
           width: 95%;
-          margin: 2em auto;
+          margin: auto auto 2em;
           display: block;
           text-decoration: none;
           cursor: pointer;
+          text-align: center;
         }
           .main__container__service-wrapper__inner-textlink span{
             padding: 1em;
@@ -286,6 +415,7 @@ export default {
         .main__eyecatch-conts-underp{
           display: none;
         }
+
 
 /*会社概要*/
 .main__container__service-wrapper__outline{
@@ -315,6 +445,9 @@ export default {
     	-ms-flex-align: start;
     	align-items: flex-start;
   }
+  .main__container__service-wrapper__outline section:last-child{
+    border-bottom: 2px solid #666;
+  }
     .main__container__service-wrapper__outline__inner h3{
       width: 100%;
 			margin: 0 auto 1em;
@@ -330,166 +463,12 @@ export default {
 			padding: 0;
 			border: none;
       color: #666;
+      line-height: 2.2;
     }
-
-/*お問い合わせフォーム*/
-.main__container__contact{
-  width: 92.5%;
-  max-width: 750px;
-  margin: 2em auto 5em;
-}
-.main__container__contact-discp{
-  font-size: 12px;
-  margin: 1.5em auto;
-  text-align: left;
-  line-height: 2;
-}
-form{
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-}
-.main__container__wrapper__contactform{
-  width: 100%;
-  margin: 2em auto;
-}
-  .question-wrapper{
-    margin: 0 auto 1.5em;
+  .top_company_morebutton{
+    margin: 4em auto 8em;
+    max-width: 300px;
   }
-    .question-wrapper p{
-      margin: 0 auto .75em;
-      font-size: 13px;
-    }
-      .question-wrapper p span.hissu{
-        display: inline-block;
-        font-size: 10px;
-        padding: .25em .5em;
-        background: #ff6666;
-        border-radius: 5px;
-        color: #FFF;
-        margin: 0 .75em 0 0;
-      }
-      .question-wrapper p span.nini{
-        display: inline-block;
-        font-size: 10px;
-        padding: .25em .5em;
-        background: #6699ff;
-        border-radius: 5px;
-        color: #FFF;
-        margin: 0 .75em 0 0;
-      }
-    .question-wrapper input{
-      width: 95%;
-      max-width: 450px;
-      padding: 1em;
-      border: 1px solid #CCC;
-    }
-
-    .question-wrapper .name-wrapper{
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 95%;
-      max-width: 450px;
-    }
-      .question-wrapper .name-wrapper .name-wrapper-inner{
-        width: 45%;
-      }
-        .question-wrapper .name-wrapper .name-wrapper-inner input{
-          width: 100%;
-          border: 1px solid #CCC;
-        }
-
-    select {
-      /* styling */
-      background-color: white;
-      border: thin solid #CCC;
-      border-radius: 2px;
-      display: inline-block;
-      font: inherit;
-      line-height: 1.5em;
-      padding: 0.5em 3.5em 0.5em 1em;
-      /* reset */
-      margin: 0;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    select.minimal {
-      background-image:
-      linear-gradient(45deg, transparent 50%, gray 50%),
-      linear-gradient(135deg, gray 50%, transparent 50%),
-      linear-gradient(to right, #ccc, #ccc);
-      background-position:
-      calc(100% - 20px) calc(1em + 2px),
-      calc(100% - 15px) calc(1em + 2px),
-      calc(100% - 2.5em) 0.5em;
-      background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
-      background-repeat: no-repeat;
-      width: 100%;
-      max-width: 475px;
-    }
-
-    select.minimal:focus {
-      background-image:
-      linear-gradient(45deg, green 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, green 50%),
-      linear-gradient(to right, #ccc, #ccc);
-      background-position:
-      calc(100% - 15px) 1em,
-      calc(100% - 20px) 1em,
-      calc(100% - 2.5em) 0.5em;
-      background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
-      background-repeat: no-repeat;
-      border-color: #6699ff;
-      outline: 0;
-    }
-
-
-    .contacy-label-wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .question-wrapper .check-label{
-      cursor: pointer;
-      width: 100%;
-      margin: 0 auto .75em;
-    }
-      .question-wrapper .check-label input{
-        width: auto;
-        font-size: 3em;
-      }
-
-    .question-wrapper textarea{
-      width: 100%;
-      max-width: 475px;
-      height: 150px;
-      border-color: #CCC;
-    }
-
-    .submit{
-      border-style: none;
-      background: #666;
-      padding: 1em;
-      color: #FFF;
-      width: 20%;
-      max-width: 100px;
-      margin: 0 auto;
-      display: block;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-
 
 /*media Queries 768
 ----------------------------------------------------*/
@@ -552,9 +531,11 @@ form{
     width: 30%;
   }
 
-  .main__container__service-wrapper__outline__inner{
+  .main__container__service-wrapper__outline__inner,
+  .main__container__service-wrapper__outline section:last-child{
     border: none;
   }
+
     .main__container__service-wrapper__outline__inner h3{
       width: 25%;
 			padding-top: 20px;
@@ -566,11 +547,17 @@ form{
 			padding-top: 20px;
 			border-top: 2px solid #CCC;
     }
+    .main__container__service-wrapper__outline section:last-child h3{
+      border-bottom: 2px solid #333;
+      padding-bottom: 60px;
+    }
+    .main__container__service-wrapper__outline section:last-child p{
+      border-bottom: 2px solid #CCC;
+      padding-bottom: 55px;
+    }
 
-  .main__container__contact-discp{
-    text-align: center;
-    font-size: 14px;
-    margin: 1.5em auto 2em;
+  .top_company_morebutton{
+    margin: -1em auto 8em;
   }
 
 }

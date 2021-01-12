@@ -2,12 +2,14 @@
   <div>
   <!--SPヘッダーここから-->
   <header class="header-sp">
-  <!--
-    <img class="header-sp__img-mail" src="/mailicon.png" alt="お問い合わせはこちら">
-  -->
-    <img class="header-sp__img-logo" src="/logo_tatepass.png" alt="株式会社tatepass">
+    <div class="header-sp__inner">
+    <a class="header-sp__img-mail" href="/contact">
+    	<img class="header-sp__img-mail" src="/mailicon.png" alt="お問い合わせはこちら">
+    </a>
+    <a class="sp_header_logo_a" href="/">
+      <img class="header-sp__img-logo" src="/logo_tatepass.png" alt="株式会社tatepass">
+    </a>
     <!--SPドロワーメニューここから-->
-  <!--
     <div class="drowermenu">
       <input type="checkbox" class="check" id="checked">
       <label class="menu-btn" for="checked">
@@ -19,13 +21,14 @@
       <label class="close-menu" for="checked"></label>
       <nav class="drawer-menu">
         <ul>
-          <li><a href="#">事業内容</a></li>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/service">Service</a></li>
+          <li><a href="/company">Company</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  -->
+    </div>
       <!--SPドロワーメニューここまで-->
   </header>
   <!--SPヘッダーここまで-->
@@ -33,41 +36,77 @@
     <!--PCヘッダーここから-->
     <header class="header-pc">
       <nav>
-        <img src="/logo_tatepass.png" alt="株式会社tatepass">
-      <!--
+        <a class="pc_header_logo_a" href="/">
+          <img src="/logo_tatepass.png" alt="株式会社tatepass">
+        </a>
         <ul>
-          <li>事業内容</li>
-          <li>会社概要</li>
-          <li class="header-pc-list-contact">お問い合わせ</li>
+          <li><a href="/service">事業内容</a></li>
+          <li><a href="/company">会社概要</a></li>
+          <li class="header-pc-list-contact"><a href="/contact">お問い合わせ</a></li>
         </ul>
-      -->
       </nav>
     </header>
     <!--PCヘッダーここまで-->
   </div>
 </template>
 
-
-
 <style>
 
+/*ヘッダースクロールのやつ*/
+/* 基本のスタイル */
+   .header-sp.delighter {
+      transition: all .3s ease-out;
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+ 
+/* スタート時のスタイル */
+   .header-sp.delighter.started {
+      transform: none;
+      opacity: 1;
+   }
+ 
+/* エンド時のスタイル */
+   .header-sp.delighter.started.ended {
+      border: solid red 10px;
+   }
+/*ここまで*/
+
 .header-sp{
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  z-index: 1000;
+  padding: .5em 15px;
   margin: 20px auto 15px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+  .header-sp__inner{
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header-sp__img-mail{
     width: 10%;
-    max-width: 50px;
+    max-width: 38px;
     height: auto;
   }
-  .header-sp__img-logo{
+  	.header-sp__img-mail{
+  		width: 100%;
+  	}
+  .sp_header_logo_a{
+    display: block;
     width: 30%;
-    max-width: 150px;
-    height: auto;
   }
+    .header-sp__img-logo{
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+    }
 .header-pc{
   display: none;
 }
@@ -128,7 +167,7 @@ ul {
     top: 0;
     right: 0;
     width: 225px;
-    height: 100%;
+    height: 100vh;
     padding: 120px 0;
     background: #222;
     -webkit-transition-property: all;
@@ -157,6 +196,7 @@ ul {
     color: #fff;
     -webkit-transition: all .8s;
     transition: all .8s;
+    text-decoration: none;
 }
 
 .drawer-menu li a:hover {
@@ -271,9 +311,9 @@ ul {
 }
 
 .check:checked ~ .menu-btn{
-  position: fixed;
-  right: 5%;
-  top: 23px;
+  /*position: fixed;*/
+  /*right: 5%;*/
+  /*top: 23px;*/
 }
 
 .check:checked ~ .menu-btn .menu-btn__text {
@@ -336,6 +376,16 @@ ul {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    z-index: 100;
+    transition: all .3s;
+    height: 75px;
+  }
+  .scroll-down{
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
   }
     .header-pc nav{
       display: flex;
@@ -344,10 +394,18 @@ ul {
       align-items: center;
       width: 95%;
       margin: 0 auto;
-      padding: 1.5em 0;
+      height: 75px;
+      transition: all .3s;
     }
-      .header-pc nav img{
+      .pc_header_logo_a{
+        display: block;
         width: 15%;
+        transition: all .3s;
+      }
+      .header-pc nav img{
+        width: 100%;
+        height: auto;
+        transition: all .3s;
       }
         .header-pc nav ul{
           display: flex;
@@ -359,11 +417,38 @@ ul {
           .header-pc nav ul li{
 
           }
+            .header-pc nav ul li a{
+              position: relative;
+              display: inline-block;
+              text-decoration: none;
+              color: #333;
+              transition: all .3s;
+              font-size: 14px;
+            }
+            .header-pc nav ul li a.header-scroll-a{
+              font-size: 12px;
+            }
+            .header-pc nav ul li a:hover{
+              color: #86bd42;
+            }
+              .header-pc nav ul li a::after{
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: #86bd42;
+                transform: scale(0, 1);
+                transform-origin: right top;
+                transition: transform .3s;
+              }
+              .header-pc nav ul li a:hover::after {
+                transform-origin: left top;
+                transform: scale(1, 1);
+              }
           .header-pc nav ul li.header-pc-list-contact{
-            padding: .5em 1em;
-            background: #666;
-            color: #FFF;
-            border-radius: 3px;
+            
           }
 }
 

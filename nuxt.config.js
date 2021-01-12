@@ -5,11 +5,16 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'DNA検査とITで「人を勝たせる仕事をする」｜ 株式会社tatepass',
+    title: 'DNA検査とITでお客様に「最高の縦パスを通す」| 株式会社tatepass',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '私たちは企業や個人が抱える様々な悩みや課題に向き合い、DNA検査とITソリューションを軸にそれらの解決をサポート致します。 刻一刻と変化する現代社会の中で「変化を恐れず」お客様に最高の「タテパス」を通すことが私たちの使命です。' }
+    ],
+    script: [
+      { src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' },
+      { src: 'https://tatepass.com/tatepass_js/delighters.js' },
+      { src: 'https://tatepass.com/tatepass_js/scroll-down.js' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
